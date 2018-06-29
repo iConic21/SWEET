@@ -1,0 +1,91 @@
+.body {
+    background-color: var(--color-primary);
+    height: calc(100% - 6rem);
+    padding-top: 21rem;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.body__filter {
+    height: 15rem;
+    width: calc(100% - 1.7rem);
+    background: var(--color-secondary);
+    position: relative;
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    z-index: 2;
+    transition: height ease 0.2s;
+    box-shadow: 0 .2rem .2rem -.2rem rgba(0,0,0,.2);
+}
+
+.body__filter.sticky {
+    height: 6rem;
+}
+
+.body__filter .container {
+    height: 100%;
+    width: 100%;
+}
+
+.body__filter__input-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.body__filter__input {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: inline-block;
+}
+
+.body__filter__input input {
+    background-color: transparent;
+    border: 0;
+    color: var(--color-text);
+    font-size: 3rem;
+    width: calc(100% - 5rem);
+    padding-left: 5rem;
+}
+
+.body__filter__input i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 3rem;
+    color: var(--color-text);
+    transform: translateY(-50%);
+}
+
+.body__filter__input input:focus {
+    border: 0;
+    outline: none;
+}
+
+.body__cards {
+    height: 100%;
+    width: 100%;
+}
+
+.body__cards__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    width: 100%;
+    padding-top: 3rem;
+}
+
+.body__cards__loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.body__cards__loader.hide {
+    display: none;
+}

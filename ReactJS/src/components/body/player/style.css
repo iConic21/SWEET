@@ -1,0 +1,124 @@
+.player {
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    background-color: var(--color-secondary);
+    height: 120px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -7px rgba(0,0,0,0.2);
+}
+
+.player_track-image {
+    height: 100%;
+}
+
+.player_track-image img {
+    height: 100%;
+}
+
+.player_track-image,
+.player_track-controls,
+.player_track-actions {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.player_track-controls {
+    padding: 10px 5px;
+    height: calc(100% - 20px);
+    position: relative;
+    width: 300px;
+}
+
+.player_track-controls_info {
+    position: relative;
+    padding-right: 5px;
+    height: 50%;
+}
+
+.player_track-controls_info .card__name,
+.player_track-controls_info .card__user {
+    margin: 0;
+    padding-left: 10px;
+    overflow: hidden;
+    word-wrap: none;
+    width: calc(100% - 10px);
+    text-overflow: ellipsis;
+    display: block;
+    white-space: nowrap;
+    margin-top: 5px;
+}
+
+.player_track-controls_control {
+    display: inline-block;
+    font-size: 3rem;
+    color: var(--color-text);
+    width: 100%;
+    position: relative;
+    height: 50%;
+    vertical-align: top;
+}
+
+.player_track-controls_control i {
+    position: absolute;
+    left: 25%;
+    top: 40%;
+    transform: translate(-50%,-50%) scale(0.9);
+    display: inline-block;
+    cursor: pointer;
+    transition: all ease 0.1s;
+}
+
+.player_track-controls_control i:hover {
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.player_track-controls_control i.fa-play,
+.player_track-controls_control i.fa-pause {
+    left: 50%;
+}
+
+.player_track-controls_control i.fa-play:hover,
+.player_track-controls_control i.fa-pause:hover {
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.player_track-actions {
+    height: 100%;
+    width: 30px;
+    position: relative;
+}
+
+.player_track-actions i {
+    font-size: 2rem;
+    color: var(--color-text);
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    cursor: pointer;
+    transition: all ease 0.1s;
+}
+
+.player_track-actions i:hover {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.player_duration {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% + 30px);
+    height: 5px;
+    background-color: var(--color-text-sub);
+}
+
+.player_duration_progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--color-text);
+}
+
