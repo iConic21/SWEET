@@ -82,3 +82,7 @@
     background-color: var(--color-text-sub);
     margin: 0 1rem;
 }
+
+.fa-react.active {
+    color: #00d8ff;
+}
