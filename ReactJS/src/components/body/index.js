@@ -42,7 +42,7 @@ class Body extends Component {
                             this.props.tracks.collection.length <= 0 &&
 
                             (<div className="body__cards__loader">
-                                <div class="loader"></div>
+                                <div className="loader"></div>
                             </div>)
                         }
                     </div>

@@ -14,7 +14,7 @@ class Header extends Component {
             <div className="header">
                 <div className="header__container container">
                     <div className="header__logo-container">
-                        <img src="/images/logo.svg" alt="sweet logo" />
+                        <img src="/images/Logo.svg" alt="sweet logo" />
                         <div>SWEET</div>
                     </div>
                     <div className="header__options-container">
