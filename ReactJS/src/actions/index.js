@@ -7,7 +7,6 @@ const fetch_tracks = (search = "Party") => async dispatch => {
         limit: page_size,
         linked_partitioning: 1
     }).then(function (tracks) {
-        console.log(tracks);
         dispatch({ type: types.FETCH_TRACKS, payload: tracks });
     });
 };
